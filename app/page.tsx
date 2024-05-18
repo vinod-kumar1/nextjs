@@ -114,7 +114,7 @@ export default function Home() {
       <div>
         <h4 style={hrMargin}>Excercises</h4>
 
-       <span> <h3>1.</h3> <h5> My 5 Most favourite support tasks</h5> </span>
+       <span> <h3>1. From this list, rank your 5 most favourite and 5 least favourite support tasks. Provide a brief explanation for each.</h3> <h5> My 5 Most favourite support tasks</h5> </span>
         <p>Work with engineering teams during incidents and provide updates to internal and external stakeholders
 </p>
         <p>Respond to 25+ support requests via email every day
@@ -140,15 +140,19 @@ export default function Home() {
 
 <hr style={hrMargin} />
 
-<span><h3>2. </h3><p>I would like to spend time on analyzing the issues in code or in the Product features</p></span>
-  <h3>3. Challenges I faced on a specific situation for finding the solution</h3>
+<span><h3>2. From this list, rank your 5 most favourite and 5 least favourite support tasks. Provide a brief explanation for each. </h3><p>I would like to spend time on analyzing the issues in code or in the Product features</p></span>
+<hr style={hrMargin} />
+  <h3>3. Describe how you solved a challenge or technical issue that you faced in a previous role
+(preferably in a previous support role). How did you determine that your solution was
+successful? </h3>
   <p>While working in a support role for Contentstack, a headless CMS, I encountered an issue where a client was experiencing significant delays and failures when trying to publish large entries with extensive embedded content and references. The client needed a solution to ensure reliable and timely publishing of their content, as these delays were impacting their content delivery schedule. <br />
 And upon checking the logs from our side with the help of Mission Control team we were able to see that the specific CDN POP near the customer region is affected & our CDN provider Fastly was able to resolve it within few hours.
 Customer was happy about our quick response & working with Fastly to resolve the issue.😀
 </p>   
 
 <hr style={hrMargin} />
-  <h3>4. </h3> 
+  <h3>4. When would you choose to use Edge Functions, Serverless Functions, or Edge
+Middleware with Vercel?</h3> 
   <p>Edge Functions run at the edge of the network, close to the user, and are executed by Vercel's edge network. <br />
   Serverless Functions are executed on-demand in a serverless environment and are well-suited for dynamic backend logic. <br />
   Edge Middleware allows you to intercept and modify requests and responses at the edge, similar to Edge Functions, but with a more structured and reusable approach. 
@@ -156,7 +160,9 @@ Customer was happy about our quick response & working with Fastly to resolve the
 
 <hr style={hrMargin} />
 
-<h3>5.</h3> <p>
+<h3>5. Imagine a customer writes in requesting help with a build issue on a framework or
+technology that you've not seen before. How would you begin troubleshooting this and
+what questions would you ask the customer to understand the situation better?</h3> <p>
   1. As the user already shared the framework name, I'll first go through the build process in that framework & try to build a sample app in it & build <br />
   2. We can try searching for that specific error & see on what scenarios such error might occur. <br />
   3. Ask user if they've commited any changes in the code code & starts facing this issue? <br />
@@ -165,7 +171,9 @@ Customer was happy about our quick response & working with Fastly to resolve the
 
 <hr style={hrMargin} />
 
-<h3>6.</h3> 
+<h3>6. The customer from question 5 replies to your response with the below:
+<i> “I'm so frustrated. I've been trying to make this work for hours and I just can't figure it out. It must be a platform issue so just fix it for me instead of asking me questions.”</i>
+Please write a follow-up reply to the customer.</h3> 
 <p>As the user is frustrated it is not good idea to ask questions repeatedly, we can respond as below</p>
 <p>Hi username <br />
   I can understand your situation here. <br />
@@ -179,7 +187,9 @@ Customer was happy about our quick response & working with Fastly to resolve the
 
 <hr style={hrMargin} />
 
-<h3>7. </h3>
+<h3>7. A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog
+path to https://example.com?" Please write a reply to the customer. Feel free to add any
+information about your decision making process after the reply.</h3>
 <p>
 Subject: Re: Redirect from /blog path <br />
 
@@ -204,7 +214,8 @@ Vinod
 </p>
 
 <hr style={hrMargin} />
-<h3>8. </h3> 
+<h3>8. A customer is creating a site and would like their project not to be indexed by search engines. Please write a reply to the customer. Feel free to add any information about
+your decision making process after the reply.</h3> 
 <p>
 Subject: Re: Site Indexing Preferences
 
@@ -223,16 +234,18 @@ Vinod
 
 <hr style={hrMargin} />
 
-<h3>9.</h3> <p>As I've not worked with Vercel before i'm currently not sure what are all the frequent questions that customers ask. As I'm still exploring the product, I think I'll be learning & helping if I get to interact with more and more customers on a regular basis 🙂</p>
-
-<h3>10.</h3>
+<h3>9. What do you think is one of the most common problems which customers ask Vercel for
+help with? How would you help customers to overcome common problems, short-term
+and long-term?</h3> <p>As I've not worked with Vercel before i'm currently not sure what are all the frequent questions that customers ask. As I'm still exploring the product, I think I'll be learning & helping if I get to interact with more and more customers on a regular basis 🙂</p>
+<hr style={hrMargin} />
+<h3>10. How could we improve or alter this familiarisation exercise?</h3>
 <p>I think the question no. 7 & 9 are quite lean towards the product(not a bad thing) but it would be quite difficult to answer them considering the fact that I don't have experience in using the product. </p>
       </div>
 
-<h2>
+<h2 style={{marginTop : "2rem 0"}}>
   Summary
 </h2>
-
+<br />
 <p>
   I just wanted to let you know that I've answered most of the above questions by myself and there are some new things for moe like indexing, Edge function, serverless function, edge middleware and I'm exploring them 😊
 </p>
