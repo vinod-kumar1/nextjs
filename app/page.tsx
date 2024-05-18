@@ -121,8 +121,7 @@ export default function Home() {
 </p>
 <p>Create video tutorials to help teach users a specific feature or use case
 </p>
-
-        <hr />
+ <hr />
       <h5>My 5 least favourite tasks</h5>
       <p>Respond to 25+ support requests via email every day</p>
       <p>
