@@ -108,6 +108,33 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <div>
+        <h4>Excercises</h4>
+        <h5>My 5 Most favourite support tasks</h5>
+        <p>Work with engineering teams during incidents and provide updates to internal and external stakeholders
+</p>
+        <p>Respond to 25+ support requests via email every day
+</p>
+<p>Identify, file (and, where possible, resolve) bugs in private and public Vercel/Next.js repos on GitHub
+</p>
+<p>Dig through logs to troubleshoot a customer's broken project
+</p>
+<p>Create video tutorials to help teach users a specific feature or use case
+</p>
+
+        <hr />
+      <h5>My 5 least favourite tasks</h5>
+      <p>Respond to 25+ support requests via email every day</p>
+      <p>
+      Analyze hundreds of support tickets to spot trends the product team can use
+      </p>
+      <p>Manage a support team
+</p>
+<p>Respond to queries on Twitter, Reddit, Hacker News and other 3rd party sites
+</p>
+<p>Write and maintain support articles and docs pages
+</p>
+      </div>
     </main>
   );
 }
