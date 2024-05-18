@@ -1,8 +1,8 @@
 import Image from "next/image";
-
+import "./page.css"
 export default function Home() {
   let hrMargin = {
-    margin : "1.5rem 0"
+    margin: "1.5rem 0"
   }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -114,141 +114,140 @@ export default function Home() {
       <div>
         <h4 style={hrMargin}>Excercises</h4>
 
-       <span> <h3>1. From this list, rank your 5 most favourite and 5 least favourite support tasks. Provide a brief explanation for each.</h3> <h5> My 5 Most favourite support tasks</h5> </span>
+        <span> <h3>1. From this list, rank your 5 most favourite and 5 least favourite support tasks. Provide a brief explanation for each.</h3> <h5> My 5 Most favourite support tasks</h5> </span>
         <p>Work with engineering teams during incidents and provide updates to internal and external stakeholders
-</p>
+        </p>
         <p>Respond to 25+ support requests via email every day
-</p>
-<p>Identify, file (and, where possible, resolve) bugs in private and public Vercel/Next.js repos on GitHub
-</p>
-<p>Dig through logs to troubleshoot a customer's broken project
-</p>
-<p>Create video tutorials to help teach users a specific feature or use case
-</p>
-&
-      <h5 style={{margin : "1rem 0"}}>My 5 least favourite tasks</h5>
-      <p>Respond to 25+ support requests via email every day</p>
-      <p>
-      Analyze hundreds of support tickets to spot trends the product team can use
-      </p>
-      <p>Manage a support team
-</p>
-<p>Respond to queries on Twitter, Reddit, Hacker News and other 3rd party sites
-</p>
-<p>Write and maintain support articles and docs pages
-</p>
+        </p>
+        <p>Identify, file (and, where possible, resolve) bugs in private and public Vercel/Next.js repos on GitHub
+        </p>
+        <p>Dig through logs to troubleshoot a customer's broken project
+        </p>
+        <p>Create video tutorials to help teach users a specific feature or use case
+        </p>
+        &
+        <h5 style={{ margin: "1rem 0" }}>My 5 least favourite tasks</h5>
+        <p>Respond to 25+ support requests via email every day</p>
+        <p>
+          Analyze hundreds of support tickets to spot trends the product team can use
+        </p>
+        <p>Manage a support team
+        </p>
+        <p>Respond to queries on Twitter, Reddit, Hacker News and other 3rd party sites
+        </p>
+        <p>Write and maintain support articles and docs pages
+        </p>
 
-<hr style={hrMargin} />
+        <hr style={hrMargin} />
 
-<span><h3>2. From this list, rank your 5 most favourite and 5 least favourite support tasks. Provide a brief explanation for each. </h3><p>I would like to spend time on analyzing the issues in code or in the Product features</p></span>
-<hr style={hrMargin} />
-  <h3>3. Describe how you solved a challenge or technical issue that you faced in a previous role
-(preferably in a previous support role). How did you determine that your solution was
-successful? </h3>
-  <p>While working in a support role for Contentstack, a headless CMS, I encountered an issue where a client was experiencing significant delays and failures when trying to publish large entries with extensive embedded content and references. The client needed a solution to ensure reliable and timely publishing of their content, as these delays were impacting their content delivery schedule. <br />
-And upon checking the logs from our side with the help of Mission Control team we were able to see that the specific CDN POP near the customer region is affected & our CDN provider Fastly was able to resolve it within few hours.
-Customer was happy about our quick response & working with Fastly to resolve the issue.😀
-</p>   
+        <span><h3>2. From this list, rank your 5 most favourite and 5 least favourite support tasks. Provide a brief explanation for each. </h3><p>I would like to spend time on analyzing the issues in code or in the Product features</p></span>
+        <hr style={hrMargin} />
+        <h3>3. Describe how you solved a challenge or technical issue that you faced in a previous role
+          (preferably in a previous support role). How did you determine that your solution was
+          successful? </h3>
+        <p>While working in a support role for Contentstack, a headless CMS, I encountered an issue where a client was experiencing significant delays and failures when trying to publish large entries with extensive embedded content and references. The client needed a solution to ensure reliable and timely publishing of their content, as these delays were impacting their content delivery schedule. <br />
+          And upon checking the logs from our side with the help of Mission Control team we were able to see that the specific CDN POP near the customer region is affected & our CDN provider Fastly was able to resolve it within few hours.
+          Customer was happy about our quick response & working with Fastly to resolve the issue.😀
+        </p>
 
-<hr style={hrMargin} />
-  <h3>4. When would you choose to use Edge Functions, Serverless Functions, or Edge
-Middleware with Vercel?</h3> 
-  <p>Edge Functions run at the edge of the network, close to the user, and are executed by Vercel's edge network. <br />
-  Serverless Functions are executed on-demand in a serverless environment and are well-suited for dynamic backend logic. <br />
-  Edge Middleware allows you to intercept and modify requests and responses at the edge, similar to Edge Functions, but with a more structured and reusable approach. 
-  </p> 
+        <hr style={hrMargin} />
+        <h3>4. When would you choose to use Edge Functions, Serverless Functions, or Edge
+          Middleware with Vercel?</h3>
+        <p>Edge Functions run at the edge of the network, close to the user, and are executed by Vercel's edge network. <br />
+          Serverless Functions are executed on-demand in a serverless environment and are well-suited for dynamic backend logic. <br />
+          Edge Middleware allows you to intercept and modify requests and responses at the edge, similar to Edge Functions, but with a more structured and reusable approach.
+        </p>
 
-<hr style={hrMargin} />
+        <hr style={hrMargin} />
 
-<h3>5. Imagine a customer writes in requesting help with a build issue on a framework or
-technology that you've not seen before. How would you begin troubleshooting this and
-what questions would you ask the customer to understand the situation better?</h3> <p>
-  1. As the user already shared the framework name, I'll first go through the build process in that framework & try to build a sample app in it & build <br />
-  2. We can try searching for that specific error & see on what scenarios such error might occur. <br />
-  3. Ask user if they've commited any changes in the code code & starts facing this issue? <br />
-  4. If user is not ready to share the code with us, we can go on a call to understand the issue better & see if we could atleast narrow down where the error is. <br />
-  5. If user share their atleast part of their code where we assume the error is to test on our side, we can then try & check with team.
+        <h3>5. Imagine a customer writes in requesting help with a build issue on a framework or
+          technology that you've not seen before. How would you begin troubleshooting this and
+          what questions would you ask the customer to understand the situation better?</h3> <p>
+          1. As the user already shared the framework name, I'll first go through the build process in that framework & try to build a sample app in it & build <br />
+          2. We can try searching for that specific error & see on what scenarios such error might occur. <br />
+          3. Ask user if they've commited any changes in the code code & starts facing this issue? <br />
+          4. If user is not ready to share the code with us, we can go on a call to understand the issue better & see if we could atleast narrow down where the error is. <br />
+          5. If user share their atleast part of their code where we assume the error is to test on our side, we can then try & check with team.
+        </p>
+          <hr style={hrMargin} />
 
-<hr style={hrMargin} />
+          <h3>6. The customer from question 5 replies to your response with the below:
+            <i> “I'm so frustrated. I've been trying to make this work for hours and I just can't figure it out. It must be a platform issue so just fix it for me instead of asking me questions.”</i>
+            Please write a follow-up reply to the customer.</h3>
+          <p>As the user is frustrated it is not good idea to ask questions repeatedly, we can respond as below</p>
+          <p>Hi username <br />
+            I can understand your situation here. <br />
+            As per cehcking this on our side, we we're still not clear about the exact issue you're facing OR how your build process is. To debug this faster, Can we please quickly join over a Zoom/Teams call to discuss this better?
+            Please join here : <i>Zoom Link</i>
+            <br />
+            Regards
+            Vinod
+          </p>
 
-<h3>6. The customer from question 5 replies to your response with the below:
-<i> “I'm so frustrated. I've been trying to make this work for hours and I just can't figure it out. It must be a platform issue so just fix it for me instead of asking me questions.”</i>
-Please write a follow-up reply to the customer.</h3> 
-<p>As the user is frustrated it is not good idea to ask questions repeatedly, we can respond as below</p>
-<p>Hi username <br />
-  I can understand your situation here. <br />
- As per cehcking this on our side, we we're still not clear about the exact issue you're facing OR how your build process is. To debug this faster, Can we please quickly join over a Zoom/Teams call to discuss this better?
- Please join here : <i>Zoom Link</i>
-<br />
- Regards
- Vinod
-</p>
-</p>
+        <hr style={hrMargin} />
 
-<hr style={hrMargin} />
+        <h3>7. A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog
+          path to https://example.com?" Please write a reply to the customer. Feel free to add any
+          information about your decision making process after the reply.</h3>
+        <p>
+          Subject: Re: Redirect from /blog path <br />
 
-<h3>7. A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog
-path to https://example.com?" Please write a reply to the customer. Feel free to add any
-information about your decision making process after the reply.</h3>
-<p>
-Subject: Re: Redirect from /blog path <br />
+          Dear [Customer's Name], <br />
 
-Dear [Customer's Name], <br />
+          Thank you for reaching out to our Helpdesk! <br />
 
-Thank you for reaching out to our Helpdesk! <br />
+          To redirect visitors from the "/blog" path to "https://example.com", you can utilize either Vercel's routing configuration or serverless functions, depending on your project setup and requirements. <br />
 
-To redirect visitors from the "/blog" path to "https://example.com", you can utilize either Vercel's routing configuration or serverless functions, depending on your project setup and requirements. <br />
+          Option 1: Vercel Routing Configuration <br />
+          If your project is hosted on Vercel and you're using their platform for routing, you can set up a rewrite or redirect rule in your project's vercel.json file.  <br />
 
-Option 1: Vercel Routing Configuration <br />
-If your project is hosted on Vercel and you're using their platform for routing, you can set up a rewrite or redirect rule in your project's vercel.json file.  <br />
+          Option 2: Serverless Function <br />
+          Alternatively, if you need more flexibility or want to handle the redirect logic dynamically, you can create a serverless function to handle the redirection. <br />
 
-Option 2: Serverless Function <br />
-Alternatively, if you need more flexibility or want to handle the redirect logic dynamically, you can create a serverless function to handle the redirection. <br />
+          You can deploy this function to Vercel and configure it to handle requests to the "/blog" path. <br />
 
-You can deploy this function to Vercel and configure it to handle requests to the "/blog" path. <br />
+          Please let us know if you need further assistance or have any other questions. We're here to help! <br />
 
-Please let us know if you need further assistance or have any other questions. We're here to help! <br />
+          Best regards, <br />
+          Vinod
+        </p>
 
-Best regards, <br />
-Vinod
-</p>
+        <hr style={hrMargin} />
+        <h3>8. A customer is creating a site and would like their project not to be indexed by search engines. Please write a reply to the customer. Feel free to add any information about
+          your decision making process after the reply.</h3>
+        <p>
+          Subject: Re: Site Indexing Preferences
 
-<hr style={hrMargin} />
-<h3>8. A customer is creating a site and would like their project not to be indexed by search engines. Please write a reply to the customer. Feel free to add any information about
-your decision making process after the reply.</h3> 
-<p>
-Subject: Re: Site Indexing Preferences
+          Dear [Customer's Name],
 
-Dear [Customer's Name],
+          Thank you for reaching out to us!
 
-Thank you for reaching out to us!
+          To ensure that your website is not indexed by search engines, you can include a meta tag in the HTML of your website's pages to instruct search engine crawlers not to index the content. Here's how you can add the meta tag to the head section of your HTML:
 
-To ensure that your website is not indexed by search engines, you can include a meta tag in the HTML of your website's pages to instruct search engine crawlers not to index the content. Here's how you can add the meta tag to the head section of your HTML:
+          &lt meta name="robots" content="noindex, nofollow" &gt
 
-&lt meta name="robots" content="noindex, nofollow" &gt
+          Regards
+          Vinod
 
-Regards
-Vinod
+        </p>
 
-</p>
+        <hr style={hrMargin} />
 
-<hr style={hrMargin} />
-
-<h3>9. What do you think is one of the most common problems which customers ask Vercel for
-help with? How would you help customers to overcome common problems, short-term
-and long-term?</h3> <p>As I've not worked with Vercel before i'm currently not sure what are all the frequent questions that customers ask. As I'm still exploring the product, I think I'll be learning & helping if I get to interact with more and more customers on a regular basis 🙂</p>
-<hr style={hrMargin} />
-<h3>10. How could we improve or alter this familiarisation exercise?</h3>
-<p>I think the question no. 7 & 9 are quite lean towards the product(not a bad thing) but it would be quite difficult to answer them considering the fact that I don't have experience in using the product. </p>
+        <h3>9. What do you think is one of the most common problems which customers ask Vercel for
+          help with? How would you help customers to overcome common problems, short-term
+          and long-term?</h3> <p>As I've not worked with Vercel before i'm currently not sure what are all the frequent questions that customers ask. As I'm still exploring the product, I think I'll be learning & helping if I get to interact with more and more customers on a regular basis 🙂</p>
+        <hr style={hrMargin} />
+        <h3>10. How could we improve or alter this familiarisation exercise?</h3>
+        <p>I think the question no. 7 & 9 are quite lean towards the product(not a bad thing) but it would be quite difficult to answer them considering the fact that I don't have experience in using the product. </p>
       </div>
 
-<h2 style={{marginTop : "2rem 0"}}>
-  Summary
-</h2>
-<br />
-<p>
-  I just wanted to let you know that I've answered most of the above questions by myself and there are some new things for moe like indexing, Edge function, serverless function, edge middleware and I'm exploring them 😊
-</p>
+      <h2 style={{ marginTop: "2rem" }}>
+        Summary
+      </h2>
+
+      <p>
+        I just wanted to let you know that I've answered most of the above questions by myself and there are some new things for moe like indexing, Edge function, serverless function, edge middleware and I'm exploring them 😊
+      </p>
     </main>
   );
 }
